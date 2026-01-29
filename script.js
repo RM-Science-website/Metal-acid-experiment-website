@@ -261,7 +261,23 @@ function syncRankingOptions() {
     });
 }
 
+// Hamburger menu toggle for mobile navigation
 document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
     const ids = ['rank-fastest', 'rank-middle', 'rank-slowest'];
     ids.forEach(id => {
         const el = document.getElementById(id);
