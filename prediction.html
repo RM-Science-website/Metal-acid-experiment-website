@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction — Metal–Acid Reaction Study</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Bubble-style white hint with subtle shadow (restored) */
+        .hint {
+            background: #ffffff;
+            border-left: 6px solid #f59e0b;
+            padding: 12px 16px;
+            margin-bottom: 14px;
+            border-radius: 12px;
+            color: #0f172a;
+            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+            font-style: normal;
+        }
+
+        /* Make the section title darker and more prominent */
+        .section-title {
+            color: #0b1220 !important;
+            opacity: 1 !important;
+            font-weight: 800;
+            margin-bottom: 6px;
+            text-shadow: none;
+        }
+
+        /* Subtitle readability */
+        .section-sub {
+            color: #374151;
+            opacity: 1 !important;
+            margin-bottom: 10px;
+        }
+
+        /* Ranking select design */
+        .ranking-selects { display:flex; gap:12px; flex-wrap:wrap; margin-top:8px }
+        .ranking-selects label { display:block; background:#ffffff; border:1px solid #e6e9ef; padding:10px; border-radius:8px; min-width:150px }
+        .ranking-selects select { width:100%; padding:6px 8px; border-radius:6px; border:1px solid #d1d5db; background:#f8fafc }
+        .ranking-selects .feedback { margin-top:8px }
+        /* Page content card to match site look */
+        .content {
+            padding: 2.5rem 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: #ffffff;
+            border-radius: 16px;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🔬 Science Lab</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="procedure.html">Procedure</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="prediction.html" class="active">Prediction</a></li>
+                <li><a href="limitations.html">Limitations</a></li>
+                <li><a href="conclusions.html">Conclusions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content">
+        <h2 class="section-title">Prediction Game</h2>
+        <p class="section-sub">Make five predictions about the metal–acid reactions. Answers will be scored out of 5.</p>
+        <div class="hint">Hint: Skin oils and dissolved salts can disrupt protective oxide films on metal surfaces — this commonly slows reaction start times. Keep surface condition in mind.</div>
+
+        <div class="questions">
+            <!-- Question 1 -->
+            <div class="question-card question-fade-in" style="animation-delay: 0.2s;">
+                <div class="question-number">Question 1</div>
+                <h3>🥣 Zinc Reaction Speed</h3>
+                <p>Which condition will be the slowest to start bubbling for zinc?</p>
+                <div class="answer-options">
+                    <div class="answer-option" onclick="checkAnswer(this, 'q1', 'cleaned')">
+                        <div class="option-letter">A</div>
+                        <div class="option-content">
+                            <strong>Cleaned</strong>
+                            <span class="option-desc">Surface cleaned with sandpaper</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q1', 'untouched')">
+                        <div class="option-letter">B</div>
+                        <div class="option-content">
+                            <strong>Untouched</strong>
+                            <span class="option-desc">As-received, no skin contact</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q1', 'skin')">
+                        <div class="option-letter">C</div>
+                        <div class="option-content">
+                            <strong>Skin Contact</strong>
+                            <span class="option-desc">Handled by bare hands</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q1"></div>
+            </div>
+
+            <!-- Question 2: Ranking (select-based) -->
+            <div class="question-card question-fade-in" style="animation-delay: 0.4s;">
+                <div class="question-number">Question 2</div>
+                <h3>⏱️ Ranking: Reaction Start Time</h3>
+                <p>Rank the conditions from fastest to slowest to start bubbling.</p>
+
+                <div class="ranking-selects">
+                    <label>Fastest
+                        <select id="rank-fastest">
+                            <option value="">-- choose --</option>
+                            <option value="cleaned">Cleaned</option>
+                            <option value="untouched">Untouched</option>
+                            <option value="skin">Skin Contact</option>
+                        </select>
+                    </label>
+
+                    <label>Middle
+                        <select id="rank-middle">
+                            <option value="">-- choose --</option>
+                            <option value="cleaned">Cleaned</option>
+                            <option value="untouched">Untouched</option>
+                            <option value="skin">Skin Contact</option>
+                        </select>
+                    </label>
+
+                    <label>Slowest
+                        <select id="rank-slowest">
+                            <option value="">-- choose --</option>
+                            <option value="cleaned">Cleaned</option>
+                            <option value="untouched">Untouched</option>
+                            <option value="skin">Skin Contact</option>
+                        </select>
+                    </label>
+
+                    <div style="margin-top:10px;">
+                        <button class="btn check-btn" id="check-ranking-btn" onclick="checkRanking()">Check Ranking</button>
+                    </div>
+
+                    <div class="feedback" id="feedback-q2"></div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-card question-fade-in" style="animation-delay: 0.6s;">
+                <div class="question-number">Question 3</div>
+                <h3>⚡ Fastest Metal When Cleaned</h3>
+                <p>Which metal reacts fastest when cleaned?</p>
+                <div class="answer-options">
+                    <div class="answer-option" onclick="checkAnswer(this, 'q3', 'zinc')">
+                        <div class="option-letter">A</div>
+                        <div class="option-content">
+                            <strong>Zinc</strong>
+                            <span class="option-desc">Zinc granules</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q3', 'steel')">
+                        <div class="option-letter">B</div>
+                        <div class="option-content">
+                            <strong>Steel</strong>
+                            <span class="option-desc">Steel wool</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q3', 'magnesium')">
+                        <div class="option-letter">C</div>
+                        <div class="option-content">
+                            <strong>Magnesium</strong>
+                            <span class="option-desc">Magnesium ribbon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q3"></div>
+            </div>
+
+            <!-- Question 4: Mechanism -->
+            <div class="question-card question-fade-in" style="animation-delay: 0.8s;">
+                <div class="question-number">Question 4</div>
+                <h3>💡 Understanding the Mechanism</h3>
+                <p>Why does skin contact <strong style="color: #ec4899;">slow down</strong> the reaction?</p>
+                <div class="answer-options">
+                    <div class="answer-option" onclick="checkAnswer(this, 'q4', 'insulating')">
+                        <div class="option-letter">A</div>
+                        <div class="option-content">
+                            <strong>Insulating Layer</strong>
+                            <span class="option-desc">Skin oils create a barrier preventing acid contact</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q4', 'disrupts')">
+                        <div class="option-letter">B</div>
+                        <div class="option-content">
+                            <strong>Disrupts Oxide Films</strong>
+                            <span class="option-desc">Salts and oils modify protective surface layers</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q4', 'neutralizes')">
+                        <div class="option-letter">C</div>
+                        <div class="option-content">
+                            <strong>Neutralizes Acid</strong>
+                            <span class="option-desc">Skin compounds reduce HCl concentration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q4"></div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-card question-fade-in" style="animation-delay: 1.0s;">
+                <div class="question-number">Question 5</div>
+                <h3>🔁 Overall: Longest Start Time</h3>
+                <p>Across the tested metals, which condition tended to have the longest start time (slowest to begin bubbling)?</p>
+                <div class="answer-options">
+                    <div class="answer-option" onclick="checkAnswer(this, 'q5', 'cleaned')">
+                        <div class="option-letter">A</div>
+                        <div class="option-content">
+                            <strong>Cleaned</strong>
+                            <span class="option-desc">Cleaned surface</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q5', 'untouched')">
+                        <div class="option-letter">B</div>
+                        <div class="option-content">
+                            <strong>Untouched</strong>
+                            <span class="option-desc">As-received/no handling</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q5', 'skin')">
+                        <div class="option-letter">C</div>
+                        <div class="option-content">
+                            <strong>Skin Contact</strong>
+                            <span class="option-desc">Handled by bare hands</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q5"></div>
+            </div>
+
+        </div>
+
+        <div class="score-section pulse-in" id="score-section" style="display: none;">
+            <h2>Your Score</h2>
+            <div class="score-display">
+                <span class="score-number" id="score-number">0</span>
+                <span class="score-total">/ 5</span>
+            </div>
+            <button class="btn btn-primary" onclick="resetGame()">Play Again</button>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="procedure.html" class="btn btn-secondary">← Procedure</a>
+            <a href="limitations.html" class="btn btn-primary">Limitations →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Metal-Acid Reaction Study. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

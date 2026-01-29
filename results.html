@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Metal-Acid Reactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🔬 Metal-Acid Study</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="procedure.html">Procedure</a></li>
+                <li><a href="prediction.html">Prediction</a></li>
+                <li><a href="limitations.html">Limitations</a></li>
+                <li><a href="results.html" class="active">Results</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="conclusions.html">Conclusions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">📊 Experimental Results</h1>
+            <p class="page-subtitle">Data visualization and analysis of reaction rates across all conditions</p>
+        </div>
+
+        <div class="results-overview">
+            <h2 class="section-title">Key Findings Summary</h2>
+            <div class="findings-grid">
+                <div class="finding-card finding-1 scale-in">
+                    <div class="finding-icon">✨</div>
+                    <h3>Cleaned Metals</h3>
+                    <p class="finding-stat">FASTEST Reaction</p>
+                    <p class="finding-desc">Without surface contaminants, acid reacts directly with clean metal</p>
+                </div>
+                <div class="finding-card finding-2 scale-in" style="animation-delay: 0.2s;">
+                    <div class="finding-icon">🆗</div>
+                    <h3>Untouched Metals</h3>
+                    <p class="finding-stat">NORMAL Reaction</p>
+                    <p class="finding-desc">Baseline rate with natural metal surface conditions</p>
+                </div>
+                <div class="finding-card finding-3 scale-in" style="animation-delay: 0.4s;">
+                    <div class="finding-icon">👋</div>
+                    <h3>Skin Contact Metals</h3>
+                    <p class="finding-stat">SLOWEST Reaction</p>
+                    <p class="finding-desc">Skin oils and salts inhibit reaction rate significantly</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparative Data Charts -->
+        <div class="results-section">
+            <h2 class="section-title">Reaction Time Comparison by Metal</h2>
+            
+            <!-- Zinc Chart -->
+            <div class="chart-container chart-animate">
+                <h3>Zinc Reaction Times</h3>
+                <div class="data-chart">
+                    <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Grid -->
+                        <line x1="60" y1="290" x2="500" y2="290" stroke="#e5e7eb" stroke-width="2"/>
+                        <line x1="60" y1="290" x2="60" y2="50" stroke="#e5e7eb" stroke-width="2"/>
+                        
+                        <!-- Grid lines -->
+                        <line x1="60" y1="240" x2="500" y2="240" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="60" y1="190" x2="500" y2="190" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="60" y1="140" x2="500" y2="140" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="60" y1="90" x2="500" y2="90" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        
+                        <!-- Y-axis labels -->
+                        <text x="50" y="295" font-size="12" text-anchor="end">0s</text>
+                        <text x="50" y="245" font-size="12" text-anchor="end">30s</text>
+                        <text x="50" y="195" font-size="12" text-anchor="end">60s</text>
+                        <text x="50" y="145" font-size="12" text-anchor="end">90s</text>
+                        <text x="50" y="95" font-size="12" text-anchor="end">120s</text>
+                        
+                        <!-- Data bars with animation -->
+                        <rect x="100" y="165" width="50" height="125" fill="#06b6d4" class="data-bar"/>
+                        <rect x="180" y="210" width="50" height="80" fill="#f59e0b" class="data-bar" style="animation-delay: 0.2s;"/>
+                        <rect x="260" y="120" width="50" height="170" fill="#ef4444" class="data-bar" style="animation-delay: 0.4s;"/>
+                        
+                        <!-- X-axis labels -->
+                        <text x="125" y="320" font-size="13" text-anchor="middle" font-weight="bold">Cleaned</text>
+                        <text x="125" y="335" font-size="11" text-anchor="middle" fill="#666">45s</text>
+                        
+                        <text x="205" y="320" font-size="13" text-anchor="middle" font-weight="bold">Untouched</text>
+                        <text x="205" y="335" font-size="11" text-anchor="middle" fill="#666">73s</text>
+                        
+                        <text x="285" y="320" font-size="13" text-anchor="middle" font-weight="bold">Skin Contact</text>
+                        <text x="285" y="335" font-size="11" text-anchor="middle" fill="#666">110s</text>
+                    </svg>
+                </div>
+                <p class="chart-caption">Zinc reacted fastest when cleaned (45s), slower when untouched (73s), and slowest with skin contact (110s)</p>
+            </div>
+
+            <!-- Steel Chart -->
+            <div class="chart-container chart-animate" style="animation-delay: 0.3s;">
+                <h3>Steel Reaction Times</h3>
+                <div class="data-chart">
+                    <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Grid -->
+                        <line x1="60" y1="290" x2="500" y2="290" stroke="#e5e7eb" stroke-width="2"/>
+                        <line x1="60" y1="290" x2="60" y2="50" stroke="#e5e7eb" stroke-width="2"/>
+                        
+                        <!-- Grid lines -->
+                        <line x1="60" y1="240" x2="500" y2="240" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="60" y1="190" x2="500" y2="190" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="60" y1="140" x2="500" y2="140" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="60" y1="90" x2="500" y2="90" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        
+                        <!-- Y-axis labels -->
+                        <text x="50" y="295" font-size="12" text-anchor="end">0s</text>
+                        <text x="50" y="245" font-size="12" text-anchor="end">40s</text>
+                        <text x="50" y="195" font-size="12" text-anchor="end">80s</text>
+                        <text x="50" y="145" font-size="12" text-anchor="end">120s</text>
+                        <text x="50" y="95" font-size="12" text-anchor="end">160s</text>
+                        
+                        <!-- Data bars -->
+                        <rect x="100" y="140" width="50" height="150" fill="#06b6d4" class="data-bar"/>
+                        <rect x="180" y="195" width="50" height="95" fill="#f59e0b" class="data-bar" style="animation-delay: 0.2s;"/>
+                        <rect x="260" y="80" width="50" height="210" fill="#ef4444" class="data-bar" style="animation-delay: 0.4s;"/>
+                        
+                        <!-- X-axis labels -->
+                        <text x="125" y="320" font-size="13" text-anchor="middle" font-weight="bold">Cleaned</text>
+                        <text x="125" y="335" font-size="11" text-anchor="middle" fill="#666">65s</text>
+                        
+                        <text x="205" y="320" font-size="13" text-anchor="middle" font-weight="bold">Untouched</text>
+                        <text x="205" y="335" font-size="11" text-anchor="middle" fill="#666">95s</text>
+                        
+                        <text x="285" y="320" font-size="13" text-anchor="middle" font-weight="bold">Skin Contact</text>
+                        <text x="285" y="335" font-size="11" text-anchor="middle" fill="#666">160s</text>
+                    </svg>
+                </div>
+                <p class="chart-caption">Steel showed the most dramatic difference: cleaned (65s) vs skin contact (160s) - 2.5x slower!</p>
+            </div>
+
+            <!-- Magnesium Chart -->
+            <div class="chart-container chart-animate" style="animation-delay: 0.6s;">
+                <h3>Magnesium Reaction Times</h3>
+                <div class="data-chart">
+                    <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Grid -->
+                        <line x1="60" y1="290" x2="500" y2="290" stroke="#e5e7eb" stroke-width="2"/>
+                        <line x1="60" y1="290" x2="60" y2="50" stroke="#e5e7eb" stroke-width="2"/>
+                        
+                        <!-- Grid lines -->
+                        <line x1="60" y1="240" x2="500" y2="240" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="60" y1="190" x2="500" y2="190" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="60" y1="140" x2="500" y2="140" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="60" y1="90" x2="500" y2="90" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                        
+                        <!-- Y-axis labels -->
+                        <text x="50" y="295" font-size="12" text-anchor="end">0s</text>
+                        <text x="50" y="245" font-size="12" text-anchor="end">10s</text>
+                        <text x="50" y="195" font-size="12" text-anchor="end">20s</text>
+                        <text x="50" y="145" font-size="12" text-anchor="end">30s</text>
+                        <text x="50" y="95" font-size="12" text-anchor="end">40s</text>
+                        
+                        <!-- Data bars -->
+                        <rect x="100" y="215" width="50" height="75" fill="#06b6d4" class="data-bar"/>
+                        <rect x="180" y="205" width="50" height="85" fill="#f59e0b" class="data-bar" style="animation-delay: 0.2s;"/>
+                        <rect x="260" y="145" width="50" height="145" fill="#ef4444" class="data-bar" style="animation-delay: 0.4s;"/>
+                        
+                        <!-- X-axis labels -->
+                        <text x="125" y="320" font-size="13" text-anchor="middle" font-weight="bold">Cleaned</text>
+                        <text x="125" y="335" font-size="11" text-anchor="middle" fill="#666">15s</text>
+                        
+                        <text x="205" y="320" font-size="13" text-anchor="middle" font-weight="bold">Untouched</text>
+                        <text x="205" y="335" font-size="11" text-anchor="middle" fill="#666">18s</text>
+                        
+                        <text x="285" y="320" font-size="13" text-anchor="middle" font-weight="bold">Skin Contact</text>
+                        <text x="285" y="335" font-size="11" text-anchor="middle" fill="#666">35s</text>
+                    </svg>
+                </div>
+                <p class="chart-caption">Magnesium, being most reactive, showed faster overall times but still slower with skin contact (35s vs 15s)</p>
+            </div>
+        </div>
+
+        <!-- Overall Comparison -->
+        <div class="overall-comparison">
+            <h2 class="section-title">Overall Pattern Analysis</h2>
+            <div class="comparison-cards">
+                <div class="comp-card comp-1 fade-in-up">
+                    <h4>🎯 Fastest Reactions</h4>
+                    <p><strong>Cleaned Magnesium: 15 seconds</strong></p>
+                    <p class="comp-desc">The most reactive metal without surface contamination</p>
+                </div>
+                <div class="comp-card comp-2 fade-in-up" style="animation-delay: 0.2s;">
+                    <h4>🐢 Slowest Reactions</h4>
+                    <p><strong>Steel with Skin Contact: 160 seconds</strong></p>
+                    <p class="comp-desc">Less reactive metal heavily contaminated with skin oils</p>
+                </div>
+                <div class="comp-card comp-3 fade-in-up" style="animation-delay: 0.4s;">
+                    <h4>📊 Average Slowdown</h4>
+                    <p><strong>~2x slower with skin contact</strong></p>
+                    <p class="comp-desc">Across all metals, skin oils doubled reaction times</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="data-table-section">
+            <h2 class="section-title">Start Times Table</h2>
+            <div class="table-responsive">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Metal</th>
+                            <th>Cleaned Start (s)</th>
+                            <th>Untouched Start (s)</th>
+                            <th>Skin Contact Start (s)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row-animate">
+                            <td><strong>Zinc</strong></td>
+                            <td class="value-best">26</td>
+                            <td class="value-mid">38</td>
+                            <td class="value-worst">50</td>
+                        </tr>
+                        <tr class="table-row-animate" style="animation-delay: 0.1s;">
+                            <td><strong>Steel</strong></td>
+                            <td class="value-best">36</td>
+                            <td class="value-mid">40</td>
+                            <td class="value-worst">45</td>
+                        </tr>
+                        <tr class="table-row-animate" style="animation-delay: 0.2s;">
+                            <td><strong>Magnesium</strong></td>
+                            <td class="value-best">3</td>
+                            <td class="value-mid">5</td>
+                            <td class="value-worst">7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="chart-caption" style="margin-top:0.8rem;">Note: <strong>Start time</strong> = seconds until sustained visible reaction (initial bubbling) after metal insertion; values are averaged from repeated trials.</p>
+        </div>
+
+        <div class="info-box info-animate">
+            <h3>📌 Key Observations</h3>
+            <ul>
+                <li><strong>Consistent Pattern:</strong> All metals showed the same trend - slowest with skin contact</li>
+                <li><strong>Surface Effect:</strong> Skin oils create a protective barrier that inhibits acid access</li>
+                <li><strong>Metal Reactivity:</strong> More reactive metals (Mg) still showed skin oil effects despite inherent speed</li>
+                <li><strong>Reproducibility:</strong> Results were consistent across multiple trials</li>
+            </ul>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="limitations.html" class="btn btn-secondary">← Limitations</a>
+            <a href="impact.html" class="btn btn-primary">Impact →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Metal-Acid Reaction Study. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

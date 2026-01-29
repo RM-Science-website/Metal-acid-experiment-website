@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="script.js"></script>
+
+            <!-- Question 2: Ranking (select-based) -->
+            <div class="question-card question-fade-in" style="animation-delay: 0.2s;">
+                <div class="question-number">Question 2</div>
+                <h3>⏱️ Ranking: Reaction Start Time</h3>
+                <p>Which condition starts bubbling the fastest to slowest?</p>
+
+                <div class="ranking-selects">
+                    <label>Fastest
+                        <select id="rank-fastest">
+                            <option value="">-- choose --</option>
+                            <option value="cleaned">Cleaned</option>
+                            <option value="untouched">Untouched</option>
+                            <option value="skin">Skin Contact</option>
+                        </select>
+                    </label>
+
+                    <label>Middle
+                        <select id="rank-middle">
+                            <option value="">-- choose --</option>
+                            <option value="cleaned">Cleaned</option>
+                            <option value="untouched">Untouched</option>
+                            <option value="skin">Skin Contact</option>
+                        </select>
+                    </label>
+
+                    <label>Slowest
+                        <select id="rank-slowest">
+                            <option value="">-- choose --</option>
+                            <option value="cleaned">Cleaned</option>
+                            <option value="untouched">Untouched</option>
+                            <option value="skin">Skin Contact</option>
+                        </select>
+                    </label>
+
+                    <div style="margin-top:10px;">
+                        <button class="btn check-btn" id="check-ranking-btn" onclick="checkRanking()">Check Ranking</button>
+                    </div>
+
+                    <div class="feedback" id="feedback-q2"></div>
+                </div>
+            </div>
+
+            <!-- Question 4: Why -->
+            <div class="question-card question-fade-in" style="animation-delay: 0.6s;">
+                <div class="question-number">Question 4</div>
+                <h3>💡 Understanding the Mechanism</h3>
+                <p>Why does skin contact <strong style="color: #ec4899;">slow down</strong> the reaction?</p>
+                
+                <div class="answer-options">
+                    <div class="answer-option" onclick="checkAnswer(this, 'q4', 'insulating')">
+                        <div class="option-letter">A</div>
+                        <div class="option-content">
+                            <strong>Insulating Layer</strong>
+                            <span class="option-desc">Skin oils create a barrier preventing acid contact</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q4', 'disrupts')">
+                        <div class="option-letter">B</div>
+                        <div class="option-content">
+                            <strong>Disrupts Oxide Films</strong>
+                            <span class="option-desc">Salts and oils modify protective surface layers</span>
+                        </div>
+                    </div>
+                    <div class="answer-option" onclick="checkAnswer(this, 'q4', 'neutralizes')">
+                        <div class="option-letter">C</div>
+                        <div class="option-content">
+                            <strong>Neutralizes Acid</strong>
+                            <span class="option-desc">Skin compounds reduce HCl concentration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q4"></div>
+            </div>
+        </div>
+
+        <div class="score-section pulse-in" id="score-section" style="display: none;">
+            <h2>Your Score</h2>
+            <div class="score-display">
+                <span class="score-number" id="score-number">0</span>
+                <span class="score-total">/ 4</span>
+            </div>
+            <button class="btn btn-primary" onclick="resetGame()">Play Again</button>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="procedure.html" class="btn btn-secondary">← Procedure</a>
+            <a href="limitations.html" class="btn btn-primary">Limitations →</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+</html></body>
+    <script src="script.js"></script>    </footer>        <p>&copy; 2026 Metal-Acid Reaction Study. All rights reserved.</p>    <footer class="footer">    <!-- Footer -->

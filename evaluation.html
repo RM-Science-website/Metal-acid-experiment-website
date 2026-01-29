@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation - Science Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🔬 Science Lab</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="experiment.html">Experiment</a></li>
+                <li><a href="evaluation.html" class="active">Evaluation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">Results & Evaluation</h1>
+            <p class="page-subtitle">Analyze and interpret the experimental findings</p>
+        </div>
+
+        <div class="results-section">
+            <div class="result-card result-1 scale-in">
+                <div class="result-icon">📊</div>
+                <h3>Data Analysis</h3>
+                <p>Compile all collected data into organized tables and charts. Calculate averages, percentages, and other relevant statistics. Create visual representations to identify patterns and trends in the results.</p>
+            </div>
+
+            <div class="result-card result-2 scale-in" style="animation-delay: 0.2s;">
+                <div class="result-icon">📈</div>
+                <h3>Observations Summary</h3>
+                <p>Summarize all qualitative observations. Note any color changes, temperature fluctuations, or reactions that occurred. Highlight unexpected results and anomalies that require further investigation.</p>
+            </div>
+
+            <div class="result-card result-3 scale-in" style="animation-delay: 0.4s;">
+                <div class="result-icon">💭</div>
+                <h3>Conclusions</h3>
+                <p>Draw conclusions based on the evidence collected. Compare results with initial hypotheses. Explain whether results support or contradict the expected outcomes. Discuss the significance of findings.</p>
+            </div>
+
+            <div class="result-card result-4 scale-in" style="animation-delay: 0.6s;">
+                <div class="result-icon">🔍</div>
+                <h3>Error Analysis</h3>
+                <p>Identify potential sources of error in the experiment. Discuss how errors may have affected results. Suggest methods to minimize errors in future attempts. Evaluate the reliability of findings.</p>
+            </div>
+
+            <div class="result-card result-5 scale-in" style="animation-delay: 0.8s;">
+                <div class="result-icon">🎯</div>
+                <h3>Future Directions</h3>
+                <p>Propose follow-up experiments or variations of the current procedure. Suggest ways to expand the scope of research. Discuss practical applications of the findings in real-world scenarios.</p>
+            </div>
+
+            <div class="result-card result-6 scale-in" style="animation-delay: 1s;">
+                <div class="result-icon">✅</div>
+                <h3>Recommendations</h3>
+                <p>Provide recommendations based on the findings. Suggest improvements to the experimental procedure. Offer advice for achieving more accurate or consistent results in future experiments.</p>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Sample Results Graph</h2>
+            <div class="sample-chart chart-animate">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <line x1="50" y1="250" x2="400" y2="250" stroke="#333" stroke-width="2"/>
+                    <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2"/>
+                    
+                    <!-- Grid lines -->
+                    <line x1="50" y1="200" x2="400" y2="200" stroke="#ddd" stroke-width="1"/>
+                    <line x1="50" y1="150" x2="400" y2="150" stroke="#ddd" stroke-width="1"/>
+                    <line x1="50" y1="100" x2="400" y2="100" stroke="#ddd" stroke-width="1"/>
+                    
+                    <!-- Data bars -->
+                    <rect x="100" y="180" width="30" height="70" fill="#FF6B6B" class="bar-animate"/>
+                    <rect x="150" y="140" width="30" height="110" fill="#4ECDC4" class="bar-animate" style="animation-delay: 0.2s;"/>
+                    <rect x="200" y="100" width="30" height="150" fill="#45B7D1" class="bar-animate" style="animation-delay: 0.4s;"/>
+                    <rect x="250" y="120" width="30" height="130" fill="#FFA07A" class="bar-animate" style="animation-delay: 0.6s;"/>
+                    <rect x="300" y="160" width="30" height="90" fill="#98D8C8" class="bar-animate" style="animation-delay: 0.8s;"/>
+                    
+                    <!-- Labels -->
+                    <text x="115" y="270" font-size="12" text-anchor="middle">Trial 1</text>
+                    <text x="165" y="270" font-size="12" text-anchor="middle">Trial 2</text>
+                    <text x="215" y="270" font-size="12" text-anchor="middle">Trial 3</text>
+                    <text x="265" y="270" font-size="12" text-anchor="middle">Trial 4</text>
+                    <text x="315" y="270" font-size="12" text-anchor="middle">Trial 5</text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="conclusion-box pulse-in">
+            <h3>🏆 Key Findings</h3>
+            <p>This experiment successfully demonstrated the principles of [scientific concept]. The results validate our hypothesis and provide valuable insights into [topic]. Moving forward, these findings can be applied to [practical application].</p>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="experiment.html" class="btn btn-secondary">← Back to Experiment</a>
+            <a href="index.html" class="btn btn-primary">Return to Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Science Lab. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

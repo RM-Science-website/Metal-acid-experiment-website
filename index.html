@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Experiment Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🔬 Science Lab</h1>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="procedure.html">Procedure</a></li>
+                <li><a href="prediction.html">Prediction</a></li>
+                <li><a href="limitations.html">Limitations</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="conclusions.html">Conclusions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="science-badges">
+                <span class="badge badge-1">⚗️ Chemistry</span>
+                <span class="badge badge-2">🔬 Experimental</span>
+                <span class="badge badge-3">📊 Data-Driven</span>
+            </div>
+            <h1 class="title-animate">Human Skin Contact & Metal-Acid Reaction Rates</h1>
+            <p class="subtitle-animate">Investigating how skin oils affect chemical reactions between metals and hydrochloric acid</p>
+            <div class="hero-buttons">
+                <a href="prediction.html" class="cta-button btn-primary pulse-btn">🎯 Make a Prediction</a>
+                <a href="results.html" class="cta-button btn-secondary pulse-btn" style="animation-delay: 0.2s;">📊 View Results</a>
+            </div>
+        </div>
+        <div class="animated-background">
+            <div class="floating-sphere sphere1"></div>
+            <div class="floating-sphere sphere2"></div>
+            <div class="floating-sphere sphere3"></div>
+            <div class="floating-sphere sphere4"></div>
+            <!-- Molecular structure visualizations -->
+            <svg class="molecule-svg" viewBox="0 0 200 200">
+                <circle cx="50" cy="50" r="8" fill="#6366f1" opacity="0.7"/>
+                <circle cx="150" cy="50" r="8" fill="#06b6d4" opacity="0.7"/>
+                <circle cx="100" cy="150" r="8" fill="#ec4899" opacity="0.7"/>
+                <line x1="50" y1="50" x2="150" y2="50" stroke="#6366f1" stroke-width="2" opacity="0.5"/>
+                <line x1="50" y1="50" x2="100" y2="150" stroke="#06b6d4" stroke-width="2" opacity="0.5"/>
+                <line x1="150" y1="50" x2="100" y2="150" stroke="#ec4899" stroke-width="2" opacity="0.5"/>
+            </svg>
+            <!-- HCl molecule -->
+            <svg class="molecule-svg" viewBox="0 0 150 100" style="right: 15%; top: 20%;">
+                <circle cx="30" cy="50" r="6" fill="#10b981" opacity="0.6"/>
+                <circle cx="80" cy="50" r="5" fill="#f59e0b" opacity="0.6"/>
+                <line x1="36" y1="50" x2="74" y2="50" stroke="#10b981" stroke-width="2" opacity="0.4"/>
+                <text x="55" y="75" font-size="12" fill="#6366f1" opacity="0.5">HCl</text>
+            </svg>
+            <!-- Metal atoms -->
+            <svg class="molecule-svg" viewBox="0 0 100 100" style="left: 10%; bottom: 20%;">
+                <circle cx="30" cy="30" r="7" fill="#ef4444" opacity="0.5"/>
+                <circle cx="70" cy="50" r="7" fill="#ef4444" opacity="0.5"/>
+                <circle cx="50" cy="70" r="7" fill="#ef4444" opacity="0.5"/>
+                <text x="35" y="95" font-size="11" fill="#ef4444" opacity="0.4">Metal</text>
+            </svg>
+            <!-- Reaction bubbles -->
+            <div class="bubble bubble-1" style="left: 70%; top: 30%; width: 15px; height: 15px; animation: float 4s ease-in-out infinite;"></div>
+            <div class="bubble bubble-2" style="left: 75%; top: 45%; width: 12px; height: 12px; animation: float 5s ease-in-out infinite 0.5s;"></div>
+            <div class="bubble bubble-3" style="left: 65%; top: 60%; width: 18px; height: 18px; animation: float 6s ease-in-out infinite 1s;"></div>
+        </div>
+    </section>
+
+    <!-- Research Overview Section -->
+    <section class="features">
+        <h2 class="section-title">Research Overview</h2>
+        <div class="research-intro">
+            <div class="intro-card intro-1">
+                <h3>🔍 Research Question</h3>
+                <p>Does human skin contact alter the rate of metal–acid reactions for zinc and steel wool in 0.5 M dilute HCl?</p>
+            </div>
+            <div class="intro-card intro-2">
+                <h3>💡 Hypothesis</h3>
+                <p>Residues from human skin (oils, salts, and chloride ions) modify the metal surface by disrupting protective oxide films, altering reaction speed.</p>
+            </div>
+            <div class="intro-card intro-3">
+                <h3>🎯 Key Finding</h3>
+                <p>Skin contact <strong>slowed</strong> reactions, cleaned metals <strong>fastest</strong>, untouched metals <strong>normal</strong>.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 3rem;">Explore the Study</h2>
+        <div class="features-grid">
+            <div class="feature-card card-1">
+                <div class="icon">📋</div>
+                <h3>Materials</h3>
+                <p>Zinc, Steel, Magnesium metals with 0.5M dilute HCl</p>
+                <a href="materials.html" class="card-link">Learn More →</a>
+            </div>
+            <div class="feature-card card-2">
+                <div class="icon">🧪</div>
+                <h3>Procedure</h3>
+                <p>Step-by-step experimental methodology and conditions</p>
+                <a href="procedure.html" class="card-link">Learn More →</a>
+            </div>
+            <div class="feature-card card-3">
+                <div class="icon">📈</div>
+                <h3>Results</h3>
+                <p>Interactive data visualizations and comparative analysis</p>
+                <a href="results.html" class="card-link">Learn More →</a>
+            </div>
+            <div class="feature-card card-4">
+                <div class="icon">🎮</div>
+                <h3>Prediction Game</h3>
+                <p>Test your understanding - predict reaction outcomes</p>
+                <a href="prediction.html" class="card-link">Learn More →</a>
+            </div>
+            <div class="feature-card card-5">
+                <div class="icon">💭</div>
+                <h3>Conclusions</h3>
+                <p>Analysis of findings and scientific implications</p>
+                <a href="conclusions.html" class="card-link">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Science Lab. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

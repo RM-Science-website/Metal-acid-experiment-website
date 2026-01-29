@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limitations - Metal-Acid Reactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🔬 Metal-Acid Study</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="procedure.html">Procedure</a></li>
+                <li><a href="prediction.html">Prediction</a></li>
+                <li><a href="limitations.html" class="active">Limitations</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="conclusions.html">Conclusions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">⚠️ Experimental Limitations & Criticisms</h1>
+            <p class="page-subtitle">Honest assessment of experimental constraints and sources of potential error</p>
+        </div>
+
+        <div class="limitations-intro">
+            <p>While this experiment successfully demonstrated the effect of skin contact on metal-acid reactions, several significant limitations should be acknowledged. These constraints may have influenced the precision and generalizability of our findings. Below, we provide a critical analysis of these limitations.</p>
+        </div>
+
+        <!-- Major Limitations -->
+        <div class="limitations-section">
+            <h2 class="section-title">Major Experimental Limitations</h2>
+
+            <div class="limitation-card limitation-critical fade-in-up">
+                <div class="limitation-icon">📏</div>
+                <div class="limitation-level">CRITICAL</div>
+                <h3>Surface Area Inconsistency (Steel Wool)</h3>
+                <p><strong>Problem:</strong> While zinc and magnesium samples could be measured precisely at 0.3g, steel wool presented a unique challenge. The fibrous nature of steel wool makes it difficult to ensure consistent surface area across samples. Two 0.3g portions of steel wool may have very different exposed surface areas depending on how tightly they are packed.</p>
+                <p><strong>Impact:</strong> This inconsistency could have caused significant variation in steel wool reaction times, independent of the surface contamination effect we were testing. Our results for steel may be less reliable than those for solid metals.</p>
+                <p><strong>How it affected results:</strong> Steel wool showed the most dramatic difference between cleaned and contaminated conditions (65s vs 160s). However, some of this variation might be due to surface area differences rather than purely the skin oil effect.</p>
+            </div>
+
+            <div class="limitation-card limitation-high fade-in-up" style="animation-delay: 0.2s;">
+                <div class="limitation-icon">⏱️</div>
+                <div class="limitation-level">HIGH</div>
+                <h3>Manual Reaction Timing</h3>
+                <p><strong>Problem:</strong> Reaction times were recorded manually by stopping a digital stopwatch when the reaction appeared to "significantly slow." This endpoint is subjective and varies based on observer perception.</p>
+                <p><strong>Impact:</strong> Each trial could have ±2-3 second variation due to human judgment alone. What one person considers "significantly slowed" another might interpret differently. This introduces systematic and random error into all measurements.</p>
+                <p><strong>How it affected results:</strong> Some of the variation between trials might reflect observer inconsistency rather than true experimental differences.</p>
+            </div>
+
+            <div class="limitation-card limitation-high fade-in-up" style="animation-delay: 0.4s;">
+                <div class="limitation-icon">🧴</div>
+                <div class="limitation-level">HIGH</div>
+                <h3>Incomplete Removal of Skin Oils During Cleaning</h3>
+                <p><strong>Note:</strong> In this study, metal samples were thoroughly cleaned with sandpaper and rinsed with deionized water. However, at the microscopic level, oils are notoriously difficult to remove completely from any surface. Theoretical residues at the nanometer scale may still exist despite thorough cleaning protocols.</p>
+                <p><strong>Impact:</strong> While we believe we achieved a sufficiently "clean" state for comparison, the "cleaned" condition may not be absolutely pristine at the molecular level. This could mean our observed slowdown factor represents a lower bound rather than the maximum possible effect.</p>
+                <p><strong>How it affected results:</strong> Our observed slowdown factor of ~2.4× might actually be conservative - theoretically cleaned metals might show even greater reactivity if oils could be removed at the molecular level.</p>
+            </div>
+
+            <div class="limitation-card limitation-medium fade-in-up" style="animation-delay: 0.6s;">
+                <div class="limitation-icon">⏱️</div>
+                <div class="limitation-level">MEDIUM</div>
+                <h3>Room Temperature - Controlled Condition</h3>
+                <p><strong>Status:</strong> All experiments were conducted at room temperature (constant throughout the study day). This was a strength of the experimental design, not a limitation.</p>
+                <p><strong>Control Applied:</strong> By keeping temperature constant, we eliminated temperature as a variable, allowing us to isolate the effect of skin contact on reaction rates.</p>
+                <p><strong>How it affected results:</strong> This consistent temperature provides confidence that observed differences in reaction times are due to surface conditions, not thermal effects.</p>
+            </div>
+
+            <div class="limitation-card limitation-medium fade-in-up" style="animation-delay: 0.8s;">
+                <div class="limitation-icon">👤</div>
+                <div class="limitation-level">MEDIUM</div>
+                <h3>Single Individual for Skin Contact</h3>
+                <p><strong>Problem:</strong> All skin contact tests were performed by the same person. Skin composition, oil production, and skin pH vary significantly between individuals and even throughout the day for the same person.</p>
+                <p><strong>Impact:</strong> Results may not generalize to other individuals with different skin types (oily, dry, sensitive) or different environmental conditions. The findings represent one specific case rather than a universal principle.</p>
+                <p><strong>How it affected results:</strong> Results are specific to this individual's skin chemistry and cannot be claimed to be universal without testing with multiple people.</p>
+            </div>
+        </div>
+
+        <!-- Methodological Issues -->
+        <div class="limitations-section">
+            <h2 class="section-title">Methodological Limitations</h2>
+            
+            <div class="method-grid">
+                <div class="method-card method-1 slide-in-left">
+                    <h4>🔬 Sample Size</h4>
+                    <p><strong>Limitation:</strong> While we conducted multiple trials, the total number of replicates per condition could have been higher for better statistical confidence.</p>
+                    <p><strong>What we did:</strong> Limited trials due to material and time constraints.</p>
+                    <p><strong>What we should have done:</strong> At least 5-10 replicates per condition for robust statistics.</p>
+                </div>
+
+                <div class="method-card method-2 slide-in-left" style="animation-delay: 0.2s;">
+                    <h4>⏰ Contact Duration</h4>
+                    <p><strong>Limitation:</strong> The duration and intensity of skin contact was estimated rather than precisely controlled.</p>
+                    <p><strong>What we did:</strong> Handled metals with bare hands for approximately 30 seconds.</p>
+                    <p><strong>What we should have done:</strong> Use a standardized contact time (e.g., exactly 30 seconds) for every sample measured with a stopwatch.</p>
+                </div>
+
+                <div class="method-card method-3 slide-in-right">
+                    <h4>💧 HCl Storage</h4>
+                    <p><strong>Limitation:</strong> The hydrochloric acid may have degraded or concentrated over time. Storage conditions weren't strictly controlled.</p>
+                    <p><strong>What we did:</strong> Used the same HCl solution throughout the experiment.</p>
+                    <p><strong>What we should have done:</strong> Verify concentration before and after experiments using titration or similar methods.</p>
+                </div>
+
+                <div class="method-card method-4 slide-in-right" style="animation-delay: 0.2s;">
+                    <h4>✋ Hand Hygiene Baseline</h4>
+                    <p><strong>Limitation:</strong> We didn't measure baseline skin oil production before the experiment or standardize hand washing.</p>
+                    <p><strong>What we did:</strong> Used hands as-is throughout the day.</p>
+                    <p><strong>What we should have done:</strong> Standardize by washing hands with soap and water 30 minutes before, then waiting a fixed time for natural oil regeneration.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Observable Variables We Couldn't Control -->
+        <div class="limitations-section">
+            <h2 class="section-title">Uncontrolled Variables</h2>
+
+            <div class="uncontrolled-list">
+                <div class="uncontrol-item fade-in-up">
+                    <div class="uncontrol-number">1</div>
+                    <h4>Metal Surface Oxidation</h4>
+                    <p>Even stored metals oxidize naturally. The degree of oxidation may have varied between metal samples, affecting baseline reactivity independent of our experimental conditions.</p>
+                </div>
+
+                <div class="uncontrol-item fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="uncontrol-number">2</div>
+                    <h4>Acid Viscosity & Molecular State</h4>
+                    <p>HCl concentration, temperature, and even hydrogen ion concentration can fluctuate. We assumed 0.5 M was consistent but didn't verify this experimentally.</p>
+                </div>
+
+                <div class="uncontrol-item fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="uncontrol-number">3</div>
+                    <h4>Atmospheric Humidity</h4>
+                    <p>Humidity affects skin oil characteristics and could influence how oils coat the metal surface. We didn't monitor or control humidity.</p>
+                </div>
+
+                <div class="uncontrol-item fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="uncontrol-number">4</div>
+                    <h4>Beaker Material Cleanliness</h4>
+                    <p>Residues from previous experiments or cleaning agents could remain on beakers, potentially affecting reaction kinetics.</p>
+                </div>
+
+                <div class="uncontrol-item fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="uncontrol-number">5</div>
+                    <h4>Vibration & Movement</h4>
+                    <p>External vibrations or movement of the apparatus could have affected reaction rates, particularly for finely-divided steel wool.</p>
+                </div>
+
+                <div class="uncontrol-item fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="uncontrol-number">6</div>
+                    <h4>Light Exposure</h4>
+                    <p>Some acids and metal surfaces can be affected by light. We didn't conduct the experiment under standardized lighting.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generalization Issues -->
+        <div class="limitations-section">
+            <h2 class="section-title">Generalization & Scope Limitations</h2>
+
+            <div class="generalization-cards">
+                <div class="gen-card gen-1 scale-in">
+                    <h4>🌍 Geographic & Temporal Limitations</h4>
+                    <p>This experiment was conducted in a specific location on a specific date. Climate, season, and local atmospheric conditions could all affect results. Results may not apply to different geographic regions or seasons.</p>
+                </div>
+
+                <div class="gen-card gen-2 scale-in" style="animation-delay: 0.2s;">
+                    <h4>⚗️ Limited Acid Concentration</h4>
+                    <p>We only tested 0.5 M HCl. Results may differ dramatically with different concentrations. Dilute acids and concentrated acids may behave very differently with respect to skin oils.</p>
+                </div>
+
+                <div class="gen-card gen-3 scale-in" style="animation-delay: 0.4s;">
+                    <h4>🧪 Limited Chemical Set</h4>
+                    <p>We only tested hydrochloric acid. Sulfuric acid, nitric acid, or other acids may show very different effects. Our conclusions apply only to this specific acid.</p>
+                </div>
+
+                <div class="gen-card gen-4 scale-in" style="animation-delay: 0.6s;">
+                    <h4>🔍 Qualitative Observations Only</h4>
+                    <p>We measured reaction time but didn't measure heat released, gas volume, or chemical composition changes. A more complete picture would require additional measurements.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- How These Limitations Affect Conclusions -->
+        <div class="impact-section">
+            <h2 class="section-title">Impact on Our Conclusions</h2>
+            
+            <div class="impact-box info-animate">
+                <h3>What We Can Confidently Say:</h3>
+                <ul class="confident-list">
+                    <li>✓ Skin contact appears to slow metal-acid reactions</li>
+                    <li>✓ This effect occurs for zinc, steel wool, and magnesium</li>
+                    <li>✓ The effect is reproducible (we got similar results across trials)</li>
+                    <li>✓ Cleaned metals react faster than contaminated ones</li>
+                    <li>✓ The magnitude of the effect is roughly 2-2.5× slowdown</li>
+                </ul>
+            </div>
+
+            <div class="impact-box warning-box">
+                <h3>What We Should Be Cautious About:</h3>
+                <ul class="cautious-list">
+                    <li>⚠️ Steel wool results may be less reliable due to surface area variation</li>
+                    <li>⚠️ Exact reaction times are estimates (±2-3 seconds error margin)</li>
+                    <li>⚠️ Results specific to this individual's skin; may not generalize</li>
+                    <li>⚠️ Only applies to 0.5 M HCl - other acids may behave differently</li>
+                    <li>⚠️ Cleaned condition may not be truly "clean" at microscopic level</li>
+                    <li>⚠️ Temperature variations may account for some scatter in data</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Recommendations for Future Work -->
+        <div class="recommendations-section">
+            <h2 class="section-title">Recommendations for Improved Future Studies</h2>
+
+            <div class="recommendation-grid">
+                <div class="rec-card rec-1 fade-in-up">
+                    <div class="rec-icon">🔬</div>
+                    <h4>Use Electronic Timers</h4>
+                    <p>Employ automated sensors (pH sensors, conductivity meters, or video analysis) to detect reaction endpoint objectively rather than relying on human observation.</p>
+                </div>
+
+                <div class="rec-card rec-2 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="rec-icon">🌡️</div>
+                    <h4>Control Temperature</h4>
+                    <p>Conduct all experiments in a temperature-controlled chamber (±0.5°C) or use a water bath to maintain constant conditions.</p>
+                </div>
+
+                <div class="rec-card rec-3 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="rec-icon">⚖️</div>
+                    <h4>Use Consistent Metal Forms</h4>
+                    <p>Avoid steel wool in favor of steel rods or foil cut to precise dimensions. Ensure all metals are in forms that allow consistent surface area measurement.</p>
+                </div>
+
+                <div class="rec-card rec-4 fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="rec-icon">👥</div>
+                    <h4>Test Multiple Subjects</h4>
+                    <p>Recruit multiple participants with varying skin types and conditions to determine if results generalize or vary with individual differences.</p>
+                </div>
+
+                <div class="rec-card rec-5 fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="rec-icon">🧼</div>
+                    <h4>Standardize Sample Preparation</h4>
+                    <p>Create a detailed protocol for cleaning (scrubbing time, cleaning agent, drying method) and document baseline conditions of all samples.</p>
+                </div>
+
+                <div class="rec-card rec-6 fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="rec-icon">📊</div>
+                    <h4>Increase Sample Size</h4>
+                    <p>Conduct at least 10 replicates per condition to allow for statistical analysis and error estimation rather than relying on small sample sizes.</p>
+                </div>
+
+                <div class="rec-card rec-7 fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="rec-icon">⚗️</div>
+                    <h4>Verify Reagent Properties</h4>
+                    <p>Use pH meters and conductivity meters to verify HCl concentration before and after experiments. Consider using freshly prepared acid for each experiment.</p>
+                </div>
+
+                <div class="rec-card rec-8 fade-in-up" style="animation-delay: 0.7s;">
+                    <div class="rec-icon">🔍</div>
+                    <h4>Measure Multiple Parameters</h4>
+                    <p>Beyond reaction time, measure heat release, gas volume, color change intensity, and use analytical chemistry (GC-MS) to identify what skin components are most inhibitory.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Assessment -->
+        <div class="final-assessment">
+            <h2 class="section-title">Final Assessment</h2>
+            <div class="assessment-box">
+                <p><strong>Overall Reliability:</strong> Despite its limitations, this experiment successfully demonstrated that skin contact affects metal-acid reaction rates. The effect is clear, reproducible, and significant. However, the exact magnitude of the effect and its universality across different conditions remain somewhat uncertain.</p>
+                <p><strong>Validity:</strong> The experiment is valid as a demonstration that surface contamination matters in chemistry. However, it should be viewed as a preliminary investigation rather than a definitive study. The limitations described above suggest the findings would benefit from replication with more rigorous controls.</p>
+                <p><strong>Contribution:</strong> Despite limitations, this work provides evidence for an interesting phenomenon and raises important questions about laboratory procedures, sample preparation, and the role of human factors in chemical experiments.</p>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="prediction.html" class="btn btn-secondary">← Prediction</a>
+            <a href="results.html" class="btn btn-primary">Results →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Metal-Acid Reaction Study. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
