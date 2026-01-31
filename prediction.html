@@ -6,16 +6,30 @@
     <title>Prediction — Metal–Acid Reaction Study</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Bubble-style white hint with subtle shadow (restored) */
+        /* Bubble-style hint with enhanced appeal */
         .hint {
-            background: #ffffff;
-            border-left: 6px solid #f59e0b;
-            padding: 12px 16px;
-            margin-bottom: 14px;
-            border-radius: 12px;
-            color: #0f172a;
-            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
-            font-style: normal;
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid #f59e0b;
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            color: #78350f;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.5);
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .hint::before {
+            content: "💡";
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .hint:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 40px rgba(245, 158, 11, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.5);
         }
 
         /* Make the section title darker and more prominent */
@@ -66,9 +80,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="materials.html">Materials</a></li>
                 <li><a href="procedure.html">Procedure</a></li>
-                <li><a href="results.html">Results</a></li>
                 <li><a href="prediction.html" class="active">Prediction</a></li>
                 <li><a href="limitations.html">Limitations</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="impact.html">Impact</a></li>
                 <li><a href="conclusions.html">Conclusions</a></li>
             </ul>
         </div>
@@ -82,7 +97,7 @@
         <div class="questions">
             <!-- Question 1 -->
             <div class="question-card question-fade-in" style="animation-delay: 0.2s;">
-                <div class="question-number">Question 1</div>
+                <div class="question-number">1</div>
                 <h3>🥣 Zinc Reaction Speed</h3>
                 <p>Which condition will be the slowest to start bubbling for zinc?</p>
                 <div class="answer-options">
@@ -113,7 +128,7 @@
 
             <!-- Question 2: Ranking (select-based) -->
             <div class="question-card question-fade-in" style="animation-delay: 0.4s;">
-                <div class="question-number">Question 2</div>
+                <div class="question-number">2</div>
                 <h3>⏱️ Ranking: Reaction Start Time</h3>
                 <p>Rank the conditions from fastest to slowest to start bubbling.</p>
 
@@ -155,7 +170,7 @@
 
             <!-- Question 3 -->
             <div class="question-card question-fade-in" style="animation-delay: 0.6s;">
-                <div class="question-number">Question 3</div>
+                <div class="question-number">3</div>
                 <h3>⚡ Fastest Metal When Cleaned</h3>
                 <p>Which metal reacts fastest when cleaned?</p>
                 <div class="answer-options">
@@ -186,7 +201,7 @@
 
             <!-- Question 4: Mechanism -->
             <div class="question-card question-fade-in" style="animation-delay: 0.8s;">
-                <div class="question-number">Question 4</div>
+                <div class="question-number">4</div>
                 <h3>💡 Understanding the Mechanism</h3>
                 <p>Why does skin contact <strong style="color: #ec4899;">slow down</strong> the reaction?</p>
                 <div class="answer-options">
@@ -217,7 +232,7 @@
 
             <!-- Question 5 -->
             <div class="question-card question-fade-in" style="animation-delay: 1.0s;">
-                <div class="question-number">Question 5</div>
+                <div class="question-number">5</div>
                 <h3>🔁 Overall: Longest Start Time</h3>
                 <p>Across the tested metals, which condition tended to have the longest start time (slowest to begin bubbling)?</p>
                 <div class="answer-options">
